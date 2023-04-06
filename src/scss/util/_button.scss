@@ -1,0 +1,51 @@
+@use'../globalscss' as c;
+@use '../scssfun/mixins' as m;
+// tweet full button
+.tweet_btn_box{
+    width:95%;
+    height: inherit;
+
+
+    button{
+        
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border:none;
+        outline: none;
+        background-color:c.$tweet_background ;
+        font-size: 20px;
+        font-weight: 600;
+        color:c.$tweet_color;
+        transition: all 0.2s ease-in-out;
+      
+         @media screen and (min-width:1300px){
+            width: 100%; 
+            border-radius: 25px;
+         }
+         @media screen and (max-width:1299.9px){
+            @include m.link_smallscreen
+         }
+        &:hover{
+            background-color:c.$tweet_hover_background ;
+            transition: all 0.2s ease-in-out;
+        }
+      span{
+        &.tweet_text{
+            @media screen and (max-width:1299.9px){
+                display: none;
+            }
+        }
+        &.tweet_icon{
+            i{
+                font-size: 24px;
+                color: white;
+            }
+            @media screen and (min-width:1300px){
+                display: none;
+            }
+        }
+      }
+    }
+}

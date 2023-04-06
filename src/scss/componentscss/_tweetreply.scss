@@ -1,0 +1,128 @@
+@use '../globalscss/color' as c;
+@use '../scssfun/mixins' as m;
+.tweet_reply_container{
+    width: 100%;
+    min-height: 304px;
+    height: 100%;
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+     
+    .tweet_reply_box{
+        width: 100%;
+        min-height: 284px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    //    border: 1px solid red;
+    }
+}
+// tweet reply common class
+.tw_re_com_container{
+   width: 100%;
+   display: flex;
+//    border: 1px solid black; 
+}
+.tw_re_com_left{
+width: 50px;
+min-height: 100%;
+// border: 1px solid red;
+.tw_re_com_profilebox{
+    width: inherit;
+    height: 50px;
+    // border: 1px solid blue;
+}
+}
+.tw_re_com_right{
+width: 100%;
+height: 100%;
+margin-left: 12px;
+// border: 1px solid blue;
+}
+// tweet post user section
+.tw_re_owner_content{
+    .tw_re_left_container{
+        display: flex;
+        flex-direction: column;
+        // border: 1px solid red;
+    }
+   .tw_re_com_linebox{
+    margin: 5px auto;
+    height: 100%;
+    border: 1px solid c.$border_line_color;
+   }
+    .tw_re_post_usrinfo{
+        display: flex;
+        align-items: center;
+        padding: 5px 0px;
+
+        h3{
+            font-size: 15.5px;
+            line-height: 1.2;
+            font-weight: 700;
+            color: c.$h1_h2_h3_normalcolor;
+        }
+        h4{
+            padding: 0px 5px;
+            font-size: 15px;
+            line-height:1.2;
+            font-weight: 400;
+            color: c.$h6_color;
+        }
+    }
+    .tw_re_post_des{
+        p{
+            font-size: 15px;
+            line-height: 1.2;
+            font-weight: 500;
+            color: c.$h1_h2_h3_normalcolor;
+        }
+    }
+    .tw_re_post_user_email{
+        padding: 15px 0px 20px 0px;
+        a{
+            font-size: 15px;
+            line-height: 1.2;
+            font-weight: 400;
+            color: c.$h1_h2_h3_normalcolor;
+            span{
+                padding: 0px 5px;
+                color: c.$twitter_color;
+            }
+        }
+
+    }
+}
+
+
+// tweet post reply user section
+.tw_re_user_content{
+//    border: 1px solid blue;
+   width: 100%;
+   min-height: 200px;
+   height: 100%;
+   display: flex;
+   .tw_re_right_container{
+    width: 100%;
+    min-height: 200px;
+    height: 100%;
+    display: flex;
+    // border: 1px solid black;
+   }
+   .tw_re_input_container{
+    width: 100%;
+    min-height: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // border: 1px solid green;
+    .tw_re_input_top{
+        width: 100%;
+        padding-top: 10px;
+        // border: 1px solid red;
+    }
+   
+   }
+
+}

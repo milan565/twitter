@@ -1,0 +1,233 @@
+@use '../globalscss' as c;
+.header_container{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    // border:1px solid red;
+}
+.header_box{
+    
+    width:275px; 
+    height: 100%;
+    padding:0px 12px;
+    // border:1px solid green;
+    // border-right: 1px solid c.$border_line_color;
+    @media screen and (max-width:1300px) {
+        width:88px; 
+    }
+    @media screen and (max-width:635px) {
+        width: 68px;  
+        padding: 0px 3px;
+    }
+}
+.body_container{
+  
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    @media screen and (min-width:1112.1px){
+        width:990px;   
+    }
+    @media screen and (max-width:1112px) {
+        max-width: 920px;
+        
+    }
+   
+    @media screen and (max-width:768px) {
+        max-width: 520px;
+        
+    }
+
+   .body_left_container{
+    width: 60%;
+    height: 100%;
+    // border: 1px solid red;
+    border-left: 1px solid c.$border_line_color;
+    border-right: 1px solid c.$border_line_color;
+    @media screen and (max-width:1020px){
+        width: 70%;
+    }
+    @media screen and (max-width:768px){
+        width: 100%;
+    }
+    .body_left_box{
+        // width: 100%;
+        width: 100%;
+        height: inherit;
+        position: relative;
+    }
+   }
+   .body_right_container{
+    width: 38%;
+    height: 100%;
+    padding: 0px 0px 0px 32px;
+    @media screen and (max-width:1020px){
+        display: none;
+    }
+    // border:1px solid blue;
+
+    .body_right_innercontainer{
+        width: 100%;
+        height: 100%;
+        // padding-bottom: 50px;
+        // padding: 5px 0px;
+        // border: 1px solid black;
+    .body_right_header{
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: white;
+       
+    }
+      
+    }
+   }
+   
+}
+
+
+// this is the new make up of the app
+.hheader_container{
+    box-sizing: border-box;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    z-index: 999;
+    // border: 1px solid black;
+    @media  screen and (min-width:1500px) {
+        width: 26.48%;   
+    }
+    @media  screen and (max-width:1499.98px) {
+        width: 24.19%;   
+    }
+    @media  screen and (max-width:1399.98px) {
+        width: 22.5%;   
+    }
+    @media  screen and (max-width:1299.98px) {
+        width: 12.5%;   
+    }  
+     @media screen and (max-width:499.9px){
+       width: 0%;
+    }
+}
+.hheader_inner_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    // border: 1px solid red;
+}
+.hheader_box{
+    width:275px; 
+    height: 100%;
+    padding:0px 12px;
+    // border:1px solid black;
+    // border-right: 1px solid c.$border_line_color;
+    @media screen and (max-width:1300px) {
+        width:88px; 
+    }
+    @media screen and (max-width:635px) {
+        width: 68px;  
+        padding: 0px 0px;
+    }
+    // @media screen and (max-width:499.9px){
+    //     border: 1px solid red;
+    // }
+}
+
+// layout of body
+.bbody_container{
+    box-sizing: border-box;
+    // width: 100%;
+    // height: 200vh;
+   
+    display: flex;
+    justify-content: flex-end;
+}
+.bbody_inner_container{
+    display: block;
+    // height: 100%;
+    // border: 1px solid blue;
+    @media  screen and (min-width:1500px) {
+        width: 73.52%;  
+    }
+    @media  screen and (max-width:1499.98px) {
+        width: 75.81%;   
+    }
+    @media  screen and (max-width:1399.98px) {
+        width: 77.5%;   
+    }
+    @media  screen and (max-width:1299.98px) {
+        width: 87.5%;   
+    } 
+    @media screen and (max-width:499.9px){
+        width: 100%;
+     }
+}
+.main_container{
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    // border: 1px solid red;
+    @media screen and (min-width:1112.1px){
+        width:990px;   
+    }
+    @media screen and (max-width:1112px) {
+        max-width: 920px;
+        
+    }
+   
+    @media screen and (max-width:768px) {
+        max-width: 520px;
+        
+    }
+
+   .left_main_container{
+    width: 60%;
+    height: 100%;
+    // border: 1px solid red;
+    border-left: 1px solid c.$border_line_color;
+    border-right: 1px solid c.$border_line_color;
+    @media screen and (max-width:1020px){
+        width: 70%;
+    }
+    @media screen and (max-width:768px){
+        width: 100%;
+    }
+    @media screen and (max-width:499.9px){
+        width: 100%;
+     }
+    .body_left_box{
+        // width: 100%;
+        width: 100%;
+        height: inherit;
+        position: relative;
+        @media screen and (max-width:499.9px){
+        padding-bottom: 30px;
+        }
+      
+    }
+   }
+   .right_main_container{
+    width: 38%;
+    height: 100%;
+    padding: 0px 0px 0px 32px;
+    @media screen and (max-width:1020px){
+        display: none;
+    }
+    @media screen and (max-width:499.9px){
+        width: 0%;
+     }
+    // border:1px solid blue;
+    .body_right_innercontainer{
+        width: 100%;
+        height: 100%;
+      
+    }
+
+   } 
+}

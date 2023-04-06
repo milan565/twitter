@@ -1,0 +1,195 @@
+@use '../globalscss' as c;
+@use '../scssfun/mixins' as m;
+.header_innerbox{
+    width:100%;
+    height: 100%;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    // border:1px solid red;
+    @media screen and (max-width:1299.9px){
+        align-items: center;
+    }
+    @media screen and (max-width:636px){
+        // padding-left: 12px;
+    }
+}
+.top_header_content{
+    width: 100%;
+    padding:5px 0px;
+    // border: 1px solid red;
+    @media screen and (max-width:636px){
+         padding-left: 12px;    
+    }
+
+}
+.logo_container{
+    width: 100%;
+    height: 50px;
+    
+}
+.logo_box{
+width: 50px;
+height: 50px;
+// border:1px solid red;
+a{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   transition: all 0.2s ease-in-out;
+   cursor: pointer;
+   &:hover{
+    background-color: c.$logo_background;
+    transition: all 0.2s ease-in-out;
+   }
+    img{
+    width: 29px;
+    height: 24px;
+    }
+}
+}
+.header_userbtn_box{
+    width: 100%;
+    height: 60px;
+
+    button{
+       padding:0px 10px!important;
+       height: 60px!important;
+       border:none;
+       outline: none; 
+       background-color: transparent;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       transition: all 0.2s ease-in-out;
+       @include m.dropdown_btn; 
+      
+
+       &:hover{
+       
+       background-color: c.$menu_background!important;
+       }
+       @media screen and (min-width:1300px){
+        width: 100%;
+        @include m.link_largescreen;
+       }
+       @media screen and (max-width:1299.9px) {
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        @include m.content_align_center;
+       }
+       .button_left{
+        display: flex;
+        align-content: center;
+        .user_profile{
+            width: 40px;
+            height: 40px;
+            img{
+                @include m.user_profile;
+            }
+        }
+        .user_info{
+            height: 40px;
+           margin-left: 10px;
+           text-align: left;
+           @include m.vertical_center_align;
+           @include m.desktop_only_content;
+
+        }
+       }
+    }
+    .button_right{
+        @include m.desktop_only_content;
+        // border: 1px solid black;
+        i{
+            color: black;
+            font-size: 18px;
+        }
+    }
+    .dropdown-menu {
+       height: 110px;
+       width: 280px;
+    //    border: 1px solid red;
+       padding: 0px;
+       z-index: 1000!important;
+       border: none;
+       background-color:c.$fix_background  ;
+
+       .header_account_mbox{
+        width: initial;
+        height: 100%;
+        background-color:c.$fix_background ;
+        padding: 15px 0px!important;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0px 0px 10px -3px c.$box_shadow;
+        z-index: 1000!important;
+        // border: 1px solid black;
+       }
+       .header_account_item{
+        width: 100%;
+        height: 40px;
+        // border: 1px solid red;
+        &.header_account_f_item{
+            border-top: 0.2px solid c.$border_line_color;
+        }
+        a{
+            width: 100%;
+            height: 100%;
+            @include m.content_align_center;
+            justify-content: flex-start;
+            padding: 0px 16px;
+            font-size: 16px;
+            font-weight: 600;
+            color: black;
+            &:hover{
+                background-color:c.$logout_account_hove ;
+            }
+        }
+       }
+       
+    }
+}
+
+// header for mobile device
+
+.mo_he_cont{
+@media screen and (min-width:500px){
+    display: none;
+}
+position: fixed;
+left: 0;
+bottom: 0;
+right: 0;
+height: 53px;
+width: 100%;
+z-index: 990;
+background-color: c.$tweeter_background;
+// padding: 0px 16px;
+// border: 1px solid red; 
+.mo_he_in_cont{
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+// padding: 0px 8px;
+// border: 1px solid black;
+.mo_he_box{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    button{
+      @include m.mo_he_button;  
+    }
+   
+    // border: 1px solid blue;
+}
+}
+}

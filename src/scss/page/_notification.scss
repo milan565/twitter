@@ -1,0 +1,125 @@
+@use '../globalscss/color' as c;
+@use '../scssfun/mixins' as m;
+.nl_container{
+    width: 100%;
+    // height: 200vh;
+    // border: 1px solid red;
+}
+.nl_box{
+    width: 100%;
+    height: 100%;
+    // border: 1px solid black;
+}
+.nl_header_box{
+    width: 100%;
+    height: 106px;
+    position: sticky;
+    top: 0;
+    background-color: c.$fix_background;
+    @include m.border_bottom;
+}
+.nl_t_header_box{
+    width: 100%;
+    height: 53px;
+    
+   
+}
+.nl_th_b{
+    padding: 0px 8px 0px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    .nl_mo_menu{
+        height: 30px;
+        width: 30px;
+        @media screen and (min-width:500px){
+            display: none;
+        }
+    }
+    .nl_t_header_title{
+        width: 90%;
+        @media screen and (max-width:500px){
+          padding: 0px 20px;
+        }
+        a{
+            h3{
+                font-size: 20px;
+                line-height: 1.2;
+                font-weight: 700!important;
+                color: c.$h1_h2_h3_normalcolor;
+                @media screen and (max-width:500px){
+                    font-size: 16px;
+                  }
+            }
+            
+            
+        }
+    }
+    .nl_t_header_btn{
+        button{
+            border: none;
+            background-color: transparent;
+            @include m.log_more_option_btn(c.$h1_h2_h3_normalcolor,c.$menu_background,c.$h1_h2_h3_normalcolor,20px);
+        }
+    }
+}
+.nl_b_header_box{
+@extend .nl_t_header_box;
+display: flex;
+.nl_b_item{
+    flex-grow: 1;
+    height: 100%;
+    a{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:c.$h6_color;
+        font-weight: 600;
+        font-size: 15px;
+        &.active{
+            color: c.$h1_h2_h3_normalcolor;
+        }
+        &:hover{
+         background-color: c.$menu_background;
+        }
+      
+        .nl_b_inner_item{
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            // border: 1px solid red;
+
+            .nl_b_underline{
+                height: 4px;
+                width: 53px;
+                background-color:c.$fotter_background ;
+                border-radius: 30px;
+                align-self: center;
+                position: absolute;
+                bottom: 1px;
+                left: -20px;
+                &.nl_b_underline_none{
+                    display: none;
+                }
+            }
+        }    
+            
+        
+    }
+    // border: 1px solid red;
+}
+}
+.nl_body_box{
+    width: 100%;
+   
+}
+
+// notification right section
+.notification_right_box{
+    width: 100%;
+    height: 100%;
+    // border: 1px solid red;
+}

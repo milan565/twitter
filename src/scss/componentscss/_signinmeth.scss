@@ -1,0 +1,64 @@
+@use '../globalscss/color' as c;
+@use '../scssfun/mixins' as m;
+.signapi_meth_container{
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    border: 1px solid c.$border_line_color ;
+   padding: 8px 16px;
+}
+.signapi_meth_header_box{
+    h1{
+        font-weight: 700;
+        line-height: 1.2;
+        font-size: 20px;
+        color:c.$h1_h2_h3_normalcolor ;
+        padding-bottom: 10px;
+    }
+    h6{
+        font-size: 13px;
+        font-weight: 500;
+    }
+}
+.signapi_meth_wrapper{
+    padding: 10px 0px;
+}
+.signapi_btn_box{
+    width: 100%;
+    height: 40px;
+    // border: 1px solid red;
+    margin: 10px 0px;
+}
+.signup_with_google{
+    button{
+       @include m.signup(c.$h1_h2_h3_normalcolor,c.$google_account_hove,500); 
+    }
+}
+.signup_with_apple{
+    button{
+       @include m.signup(c.$h1_h2_h3_normalcolor,c.$menu_background,700); 
+    }
+}
+.create_account{
+    button{
+        @include m.signup(c.$h1_h2_h3_normalcolor,c.$menu_background,700); 
+     }  
+}
+.signapi_meth_moreinfo{
+    width: 100%;
+    height: 50px;
+    // border: 1px solid red;
+
+    p{
+        font-size: 13px;
+        font-weight: 500;
+        color:c.$h6_color ;
+        line-height: 1.3;
+        a{
+            color:c.$twitter_color ;
+          &:hover{
+        text-decoration: underline;
+          }
+        }
+    }
+}

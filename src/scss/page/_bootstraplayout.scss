@@ -1,0 +1,217 @@
+@use '../globalscss/color' as c;
+@use '../scssfun/mixins' as m;
+// .bscontainer{
+// border: 1px solid red;
+// // padding:10px 0px;
+// }
+// .bsrow{
+//     border: 2px solid black;  
+// }
+// .bsleftcol{
+//     border: 1px solid blue; 
+   
+// }
+// .bsrightcol{
+//     border: 3px solid green; 
+//     height: 120vh;
+// }
+.container_wrapper{
+    width: 100%;
+    // height: 100vh;
+    // border: 2px solid red;
+    display: flex;
+    justify-content: flex-end;
+ 
+}
+.left_container{
+// max-width: 402.2px;
+// width: 26.47%; 
+height: 100vh;
+// border:2px solid blue;
+position: fixed;
+left: 0;
+top: 0;
+bottom: 0;
+display: block;
+@media  screen and (min-width:1500px) {
+    width: 26.47%;   
+}
+@media  screen and (max-width:1499.98px) {
+    width: 24.19%;   
+}
+@media  screen and (max-width:1399.98px) {
+    width: 22.5%;   
+}
+@media  screen and (max-width:1299.98px) {
+    width: 12.5%;   
+}
+// @media  screen and (min-width:1100px) {
+//     width: 13.05%;   
+// }
+}
+.right_container{
+    // max-width: 1117.2px;
+    // width: 73.52%;   
+    // height: 300vh;
+    // border:2px solid green;
+    display: block;
+    @media  screen and (min-width:1500px) {
+        width: 73.52%;  
+    }
+    @media  screen and (max-width:1499.98px) {
+        width: 75.81%;   
+    }
+    @media  screen and (max-width:1399.98px) {
+        width: 77.5%;   
+    }
+    @media  screen and (max-width:1299.98px) {
+        width: 87.5%;   
+    }
+    // @media  screen and (min-width:1100px) {
+    //     width: 86.95%;   
+    // }
+  }
+
+
+//   bootstrap global styled
+.tooltip{
+ padding: 1px 0px;
+ z-index: 1056;
+}
+.tooltip-inner{
+border-radius: 2px;
+background-color:c.$tooltip_background ;
+padding: 1px 3px;
+font-size: 12px;
+z-index: 1056;
+}
+.tooltip-arrow {
+    display: none !important;
+}
+
+// model styling
+
+.modal-dialog{
+    margin-top: 2.5rem;
+  
+}
+@media screen and (max-width:499.9px){
+.modal{
+    padding: 0px!important;
+    background-color: c.$modal_background;
+    // border: 2px solid red;
+}
+ .modal-lg{
+    width: 100%;
+    height: 100%;
+    margin: 0px!important;
+    // border: 1px solid red;
+ .modal-content{
+    width: 310px;
+    height: 320px;
+    margin: auto;
+ }
+ }   
+}
+@media screen and (min-width:992px){
+  .modal-lg{
+    width:600px;
+   .modal-content{
+    min-height: 350px!important;
+    max-height: 90vh;
+    height: 100%;
+    // border:1px solid black;
+    .modal-body{
+        min-height: 260px;
+        max-height: 550px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        // border: 1px solid blue;
+    }
+   }
+    // height: 100%;
+  }  
+}
+.modal-content{
+    border-radius: 15px;
+     
+}
+.modal-header {
+    justify-content: flex-start;
+    padding: 5px;
+   border-bottom: none;
+    button{
+        border: none;
+        background-color: transparent;
+       @include m.more_option_btn(c.$h1_h2_h3_boldcolor,c.$menu_background,c.$h1_h2_h3_boldcolor)
+    }
+    .btn-close   {
+        left: 0;
+        margin-left: 0;
+        font-size: 15px;
+    }
+}
+.modal-body{
+    // border:1px solid red;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    height: 260px;
+}
+
+
+// dropdown stylign
+
+.dropdown-item{
+   
+    height: 45px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    color:c.$h1_h2_h3_normalcolor;
+     &:hover{
+        background-color: c.$post_moreoption_hover;
+     }
+     &.delete_btn{
+        color: red;
+     }
+     i{
+        // border: 1px solid black;
+        font-size: 16px;
+     }
+    span{
+        margin-left: 15px;
+    }
+}
+.dropdown{
+    // border: 1px solid red;
+}
+.dropdown-menu{
+    padding: 0px;
+    z-index: 99!important;
+    // border: 1px solid black;
+    border: none;
+    // position: absolute!important;
+    // top: -34px!important;
+    border-radius: 10px;
+    @include m.dropdown_shadow
+    // right: 0!important;
+}
+.dropdown-item{
+    height: 40px;
+    i{
+        font-size: 20px;
+        font-weight: 700;
+       
+    }
+}
+.btn-primary{
+    background-color: transparent!important;
+}
+
+
+// offcanvas styling
+// .offcanvas{
+//     width:70%!important;
+// } 

@@ -1,0 +1,77 @@
+@use '../globalscss/color'as c;
+@use '../scssfun/mixins' as m;
+.log_body_header{
+    width: 100%;
+    height: 53px;
+    background-color:c.$fix_background ;
+    padding: 5px 8px 5px 16px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    
+    // border: 1px solid red;
+
+    .log_body_header_search{
+        width: 87%;
+        height: 100%;
+        // border: 1px solid black;
+    }
+    .log_body_header_setting{
+        button{
+        border: none;
+        background-color: transparent;
+          @include m.log_more_option_btn(c.$h1_h2_h3_normalcolor,c.$menu_background,c.$h1_h2_h3_normalcolor,20px);
+      
+        }
+    }
+}
+.log_trend_box{
+    width: 100%;
+    margin-top: 10px;
+    height:300px;
+    // border: 1px solid red;
+    .log_trend_innerbox{
+        padding: 5px 0px;
+        @include m.border_bottom;
+    }
+}
+.log_signin_meth_section{
+    width: 100%;
+    height: 400px;
+   
+    padding: 10px 0px;
+    position: sticky;
+    top: 0;
+}
+.log_signin_meth_api{
+    width:100%;
+    height: 310px;
+    
+    // border: 1px solid blue;
+}
+.log_signin_info_box{
+    padding: 16px 10px;
+}
+.signapi_botton_info{
+    p{
+        &.twiteer_lince{
+            margin-top: 6px;
+            font-size: 13px;
+            font-weight: 500;
+            color: c.$h6_color;
+        }
+        a{
+            font-size: 13px;
+            color: c.$h6_color;
+            font-weight: 500;
+            margin: 5px 8px 5px 0px;
+           
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

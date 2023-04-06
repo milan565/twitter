@@ -1,0 +1,165 @@
+@use '../scssfun/mixins' as m;
+@use '../globalscss/color' as c;
+.login_meth_section{
+    width: 100%;
+    height: inherit;
+}
+.login_meth_box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    // border: 1px solid white;
+}
+.login_meth_login{
+    width: 45%;
+    height: 34px;
+    button{
+    @include m.log_sign_btn(c.$follow_color,c.$fotter_background,c.$login_hover_background);
+    }
+}
+.login_meth_signin{
+    width: 45%;
+    height: 34px;
+    button{
+        @include m.log_sign_btn(c.$h1_h2_h3_normalcolor,c.$tweeter_background,c.$sign_hover_background);
+    }
+}
+.modal{
+    width: 100%;
+    height: 100vh;
+    
+    
+    .modal-dialog{
+      
+        margin-top: 1.5rem;
+        // border: 1px solid red;
+    }
+   
+}
+.login_modal{
+    .modal-content{
+        height: 80vh;
+       
+        .modal-header{
+            padding: 5px 12px;
+            
+            .login_mo_he{
+                width: 100%;
+                height: 40px;
+                display: flex;
+
+                .login_mo_logo{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .login_mo_logo_box{
+                        img{
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        .modal-body{
+            width: 100%;
+            padding: 0px 0px ;
+        
+           .login_mo_body{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+            
+            .login_mo_body_wra{
+                width: 300px;
+                height: 100%;
+                
+                .login_mo_bo_title{
+                    h1{
+                        font-size: 30px;
+                        font-weight: 700;
+                        line-height: 1.2;
+                        letter-spacing: 0.3px;
+                        color: c.$h1_h2_h3_normalcolor;
+                    }
+                }
+                .login_mo_bo_link{
+                    width: 100%;
+                    padding: 20px 0px 10px 0px;
+                   
+                }
+                .login_mo_orbox{
+                    width: 100%;
+                    display: flex;
+                    // flex-grow: 1;
+                    align-items: center;
+                   
+                    span{
+                        padding: 0px 4px;
+                        font-size: 15px;
+                    }
+                    .login_mo_le_or{
+                        width: 100%;
+                        border: 0.5px solid c.$menu_background;
+                    }
+                }
+                .login_mo_login_fi{
+                    width: 100%;
+                    padding: 10px 0px 0px 0px;
+                   
+                    .login_mo_input{
+
+                    }
+                }
+                .login_mo_more_btn{
+                .login_mo_next{
+                    margin: 10px 0px;
+                    height: 40px;
+                    button{
+                        @include m.log_sign_btn(c.$follow_color,black,c.$follow_hover_background);
+                      span{
+                        color:white;
+                      }
+                    }
+                }
+                .login_mo_foget{
+                    margin: 20px 0px;
+                    height: 40px;
+                    button{
+                        @include m.log_sign_btn(c.$follow_color,transparent,c.$menu_background);
+                        border: 1px solid c.$menu_background;
+                      span{
+                        color:c.$h1_h2_h3_normalcolor;
+                      }
+                    }  
+                }
+                  
+                }
+                .login_mo_sign_box{
+                    
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    h4{
+                        color: c.$h6_color;
+                    }
+                    a{
+                        padding: 0px 5px;
+                        font-size: 15px;
+                        font-weight: 600;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+           }
+
+        }
+    }
+}
+

@@ -1,0 +1,81 @@
+@use '../globalscss/color' as c;
+@use '../scssfun/mixins' as m;
+
+.body_trend_item{
+    width: 100%;
+    height: 80px;
+    margin: 3px 0px;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        background-color:c.$trend_background ;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    // border: 1px solid red;
+    .body_trend_itembox{
+        width: 100%;
+        height: 100%;
+        padding: 10px 0px 10px 16px;
+       @include m.content_align_center
+        
+    }
+}
+.body_trend_inner_itembox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    // border:1px solid blue;
+
+    .trend_item_mid{
+        margin: 4px 0px;
+        h4{
+            font-size: 16px;
+        }
+    }
+    .trend_h6{
+        h6{
+            font-size: 13px;
+            span{
+                padding-right: 5px;
+            }
+
+        }
+    }
+    .trend_item_button{
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 5px;
+        
+        button{
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        @include m.more_option_btn(c.$h6_color,c.$logo_background,c.$twitter_color);
+        @include m.dropdown_btn;   
+    }
+    .dropdown-menu {
+        // @include m.dropdown_box;
+        position: absolute!important;
+        top: -34px!important;
+       
+    }
+    }
+    .trend_option_div{
+        // position:absolute;
+        // right: 10px;
+        // top: 0;
+        width: 285px;
+       
+        // height: 100px;
+        // z-index: 99;
+        // display: none;
+        .trend_option_innerdiv{
+            width: inherit;
+            height: inherit;
+            @include m.option_div;
+            overflow: hidden;
+        }
+    }
+}

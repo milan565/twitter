@@ -1,0 +1,32 @@
+@use './color' as c;
+h1,
+h2,
+h3{
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 0;
+    font-weight: 400;
+    color: c.$h1_h2_h3_normalcolor;
+}
+
+h4
+{
+    font-size: 15px;
+    line-height: 1.2;
+    margin-bottom: 0;
+    font-weight: 700;
+    color: c.$h1_h2_h3_normalcolor;
+    margin-bottom: 0px;
+}
+
+h6{
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 0px;
+    color:c.$h6_color;
+}
+p{
+    margin-bottom: 0px;
+    line-height: 1.1;
+}

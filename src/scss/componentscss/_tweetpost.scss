@@ -1,0 +1,252 @@
+@use '../globalscss/color' as c;
+@use '../scssfun/mixins' as m;
+
+.com_post_container{
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 400px;
+  
+    padding: 0px 16px;
+    // margin-bottom: 20px;
+    @include m.border_bottom;
+   
+    &:hover{
+        background-color:c.$post_hover_background ;
+    }
+}
+.com_post_box{
+    // width: inherit;
+    width: 100%;
+    min-height: 400px;
+    padding: 12px 0px;
+    // border: 1px solid black;
+}
+.com_post_wrapper{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    // border: 1px solid red;
+}
+.com_post_user{
+    width: 50px;
+    height: 100%; 
+    
+    @media screen and (max-width:499.9px){
+      width: 42px;  
+    }
+}
+.com_post_content{
+   margin-left: 8px;
+    // padding-left: 10px;
+    height: 100%;
+    max-width: 900px;
+    width: 100%;
+    // border: 1px solid green;
+    @media screen and (max-width:768px){
+        max-width: 88%;  
+    }
+    @media screen and (max-width:576px){
+        max-width: 86%;  
+    }
+}
+.com_post_title_box{
+    // width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // border: 1px solid red;
+}
+.com_post_title_left{
+  .com_post_title_userinfo{
+    a{
+        &.user_name_link{
+            &:hover{
+                text-decoration: underline;
+                color: c.$h1_h2_h3_normalcolor;
+            }
+        }
+    }
+    display: flex;
+    // margin-bottom: 5px;
+    span{
+        padding-left: 5px;
+        line-height: 1.2;
+        font-size: 15px;
+        font-weight: 400;
+        color:c.$h6_color ;
+    }
+  }  
+  .com_post_title_postinfo{
+    p{
+        font-size: 15px;
+        line-height: 1.2;
+        font-weight: 500;
+        color: c.$h1_h2_h3_normalcolor;
+    }
+  }
+}
+.com_post_title_right{
+   position: relative;
+//    border: 1px solid red;
+    button{
+     border: none;
+     background-color: transparent;
+     @include m.more_option_btn(c.$h1_h2_h3_normalcolor,c.$logo_background,c.$twitter_color );
+      @include m.dropdown_btn;
+     
+    }
+    .dropdown-menu {
+        position: absolute!important;
+        top:-34px!important;
+        @include m.dropdown_box;
+       
+    }
+    .tweeet_post_option_div{
+        // position: absolute;
+        // z-index: 99;
+        // top: 0;
+        // left: -247px;
+        width: 285px;
+        min-height: 200px;
+        // display: none;
+        // border: 1px solid black;
+
+        .tweet_post_option_innerdiv{
+        @include m.option_div;
+        .tweet_post_option_linkwrapper{
+            // border: 1px solid red;
+         
+        }
+        }
+    }
+}
+.com_post_image_box{
+    width: 100%;
+    padding-top:5px;
+    
+    .com_post_image_innderbox{
+        // max-height:350px ;
+        margin-top: 5px;
+        border-radius: 15px;
+        // border: 1px solid red;
+
+        img{
+            border-radius: 15px;
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }  
+}
+.com_post_status_box{
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    // border: 1px solid red;
+}
+.com_post_status_moreoption{
+    display: flex;
+}
+.com_post_status_icon{
+    margin-right: 30px;
+    &.com_post_see{
+        @media screen and (max-width:499.9px){
+         display: none;   
+        }
+    }
+    &.com_post_retw{
+        @media screen and (max-width:499.9px){
+           margin-left: 20px;  
+           }  
+    }
+    // border: 1px solid red;
+    @media screen and (max-width:768px){
+        margin-right: 10px;   
+    }
+//    border: 1px solid black;
+        button{
+            &.cmt_btn{
+                @include m.tweet_post_status_icon(c.$h6_color,c.$logo_background,c.$twitter_color);
+            }
+            &.retweet_btn{
+                @include m.tweet_post_status_icon(c.$h6_color,c.$retweet_background,c.$retweet_color);  
+            }
+            &.like_btn{
+                @include m.tweet_post_status_icon(c.$h6_color,c.$like_background,c.$like_color);    
+            }
+           
+        }
+    .dropdown-menu{
+     position: absolute!important;
+     top: -34px!important;
+    }
+    
+    
+}
+
+
+    .delete_post{
+        a{
+           .tweet_post_linkitem_inner{
+            .tweet_post_linkitme_iconbox{
+                i{
+                    color: red!important;
+                }
+            }
+           }
+        }
+    }
+
+.delete_modal_box{
+    width: 100%;
+    height: 100%;
+    padding: 15px 10px;
+  
+}
+.delete_modal_innerbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    
+}
+.delete_modal_top{
+    h1{
+        font-size: 20px;
+        font-weight: 650;
+        color: c.$h1_h2_h3_normalcolor;
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.3;
+        color:c.$h6_color ;
+        letter-spacing: 0.2px;
+    }
+}
+.delete_modal_bottom{
+    // border: 1px solid red;
+   margin-top: 10px;
+    .delete_modal_yesbox{
+        width: 100%;
+        height: 44px;
+       
+        margin-top: 10px;
+        button{
+            @include m.button(white,c.$delete_bac,red,white)
+        }
+    }
+    .delete_modal_cancelbox{
+        margin-top: 10px;
+        width: 100%;
+        height: 44px;
+       button{
+        @include m.button(c.$h1_h2_h3_normalcolor,white,c.$menu_background,black);
+        border: 1px solid c.$border_line_color;
+       }
+    }
+}

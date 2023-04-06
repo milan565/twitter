@@ -1,0 +1,79 @@
+@use '../globalscss/color' as c;
+@use '../scssfun/mixins' as m;
+.com_search_container{
+    width: 100%;
+    height: inherit;
+    // position: sticky;
+    // top: 0;
+    // z-index: 999;
+    // border: 1px solid black;
+    .com_search_box{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        // border: 1px solid red;
+    }
+}
+.search_input_box{
+    height: 44px;
+    width: 100%;
+    @media screen and (max-width:499.9px){
+        // height: 20px;
+    }
+
+}
+.form_box{
+    width: 100%;
+    height: 100%;
+    padding: 0px 10px;
+    // border: 1px solid black;
+    background-color:c.$search_background ;
+    border-radius: 30px;
+    &.search_focus{
+        border: 1px solid c.$twitter_color;
+        background-color: white;
+    }
+}
+.label_box{
+    display: flex;
+    align-items: center;
+    // border: 1px solid blue;
+    .search_icon{
+        width: 34px;
+        height: 34px;
+        // border: 1px solid black;
+       @include m.content_align_center;
+        // &.focus_search_icon{
+        //     i{
+        //         color:c.$twitter_color!important;
+        //     }
+        // }
+       i{
+        font-size: 18px;
+        font-weight: 600;
+        color: c.$h6_color;
+        &.icon{
+            color:c.$twitter_color!important;   
+        }
+       }
+       
+    }
+    // border: 1px solid red;
+}
+.search_input{
+    width: 100%;
+    height: 44px;
+    input{
+        width: 100%;
+        height: 44px;
+        background-color: transparent;
+        font-size: 16px;
+        padding-left: 10px;
+        font-weight: 400;
+        border: none;
+        outline: none;
+        color: c.$h6_color;
+        
+    }
+}

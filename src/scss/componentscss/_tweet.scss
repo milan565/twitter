@@ -1,0 +1,212 @@
+@use '../globalscss/color' as c;
+@use '../scssfun/mixins' as m;
+.com_tweet_container{
+width: inherit;
+min-height: inherit;
+height: 100%;
+// height: inherit;
+// min-height: 115px;
+// border: 1px solid red;
+padding: 0px 0px;
+}
+.com_tweet_box{
+display: flex;
+min-height: inherit;
+height: 100%;
+// border: 1px solid red;
+}
+.com_left_tweetbox{
+    width: 50px;
+    height: inherit;
+
+}
+.com_right_tweetbox{
+    min-height: inherit;
+    height: 100%;
+    padding-left: 15px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    // border:1px solid blue;
+    .com_right_tweetbox_wrapper{
+    width: 100%;
+    // min-height: 100%;
+    height: 100%;
+    flex-grow: 1;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .com_right_tweetbox_inwra{
+    
+      height: 100%;
+    //   border: 1px solid black;
+    }
+    @include m.border_bottom;
+    }
+ 
+}
+.com_tweet_header{
+    padding-bottom: 10px;
+    button{
+        @include m.post_option_button{
+         border:1px solid c.$menu_background ; 
+        };
+        
+        span{
+            padding-right:5px;
+            
+        }
+    }
+   }
+.com_tweet_input{
+    width: inherit;
+    min-height: 30px;
+    // border:1px solid red;
+    textarea{
+        width: 100%;
+        border: none;
+        outline: none;
+        resize: none;
+        padding: 5px 0px;
+        font-size: 20px;
+        color:c.$h6_color;
+        font-weight: 600;
+        height: 40px;
+    }
+}
+.tweet_image_review_box{
+width: 100%;
+height: 260px;
+// border: 1px solid red;
+}
+.tweet_image_review_imagebox{
+    
+}
+.tweet_image_review_imagewr{
+    width: 100%;
+    max-width: 490px;
+    height: 230px;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .tweet_image_review_close{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        button{
+          @include m.log_more_option_btn(c.$follow_color,c.$tweet_image_close,c.$follow_color,22px);
+          background-color:rgba(0,0,0,0.75);
+          border: none;
+          font-weight: 500;
+       
+        }
+    }
+}
+.tweet_image_review_link{
+    display: flex;
+    padding: 0px 5px;
+    height: 30px;
+    // border: 1px solid red;
+}
+.tweet_image_showlink{
+    padding: 0px 5px;
+    a{
+        font-size: 13px;
+        color: c.$h6_color;
+        font-weight: 400;
+        i{
+            font-size: 14px;
+        }
+        span{
+            margin-left: 5px;
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.tweet_image_description{
+    margin-left: 15px;
+}
+.com_tweet_reply_status{
+    width: 100%;
+
+    button{
+        @include m.post_option_button;
+        
+        span{
+            padding-left:5px;
+        }
+    }
+
+}
+.com_tweet_moreoption{
+    width: 100%;
+    height: 50px;
+    padding: 5px 0px;
+    // border: 1px solid red;
+
+    .com_tweet_moreoption_wrapper{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // border: 1px solid blue;
+        .com_tweet_moreoption_left{
+            display: flex;
+
+            .com_tweet_moreoption_input{
+                button{
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+                    background-color: transparent;
+                    @include m.more_option_btn(c.$twitter_color ,c.$logo_background,c.$twitter_color );
+                    label{
+                        cursor: pointer;
+                    }
+                }
+            }
+            .com_tweet_moreoption_icon{
+                display: flex;
+                button{
+                    outline: none;
+                    border: none;
+                    background-color: transparent;
+                    @include m.more_option_btn(c.$twitter_color ,c.$logo_background,c.$twitter_color );
+                    a{
+                       
+                    }
+                }
+               
+            } 
+        }
+       .com_tweet_moreoption_right{
+         button{
+            height: 36px;
+            padding: 0px 16px;
+            outline: none;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            line-height: 1.2;
+            font-weight: 700;
+            color: white;
+            background-color:c.$tweet_deactive_background;
+            &.tweet_btn_active{
+                background-color:c.$tweet_background ;
+            }
+         }
+       } 
+    }
+}

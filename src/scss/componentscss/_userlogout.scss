@@ -1,0 +1,75 @@
+@use '../globalscss/color' as c;
+@use '../scssfun/mixins' as m;
+
+.u_logout_container{
+    width: 100%;
+    height: 100%;
+    padding: 20px 5px 15px 5px;
+    // border: 1px solid red;
+
+    .u_logout_box{
+        width: 100%;
+        height: 100%;
+        // border: 1px solid black;
+
+        .u_logout_header{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            img{
+                width: 34px;
+                height: 34px;
+            }
+        }
+        .u_logout_body{
+            padding: 8px 0px;
+            // border: 1px solid red;
+
+        h3{
+            font-size: 19px;
+            font-weight: 700;
+            line-height: 1.2;
+            color: c.$h1_h2_h3_normalcolor;
+            padding-bottom: 10px;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.3;
+            color: c.$h6_color;
+        }
+        }
+        .u_logout_link{
+            width: 100%;
+            padding: 10px 0px;
+            // border-end-end-radius: 1px solid red;
+            .logout_ok_box{
+                width: 100%;
+                height: 45px;
+                margin: 10px 0px;
+                // border: 1px solid black;
+                button{
+                    @include m.log_sign_btn(c.$tweeter_background,black,c.$follow_hover_background);
+                    span{
+                        color: white;
+                    }
+                }
+            }
+            .logout_cancel_box{
+                width: 100%;
+                height: 45px;
+                margin: 10px 0px;
+                // border: 1px solid black;
+                button{
+                    @include m.log_sign_btn(c.$h1_h2_h3_normalcolor,transparent,c.$menu_background);
+                   
+                    border: 1px solid c.$h1_h2_h3_normalcolor;
+                    span{
+                        color: c.$h1_h2_h3_normalcolor;
+                    }
+                }
+            }
+        }
+    }
+}

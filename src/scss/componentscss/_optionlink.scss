@@ -1,0 +1,36 @@
+@use '../globalscss/color' as c;
+.tweet_post_option_linkitem{
+    a{
+        padding: 0px 0px 0px 16px;
+        height: 45px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        // border: 1px solid black;
+        &:hover{
+            background-color: c.$trend_background;
+        }
+        .tweet_post_linkitem_inner{
+          display: flex;
+          align-items: center;
+        //   border: 1px solid blue;
+         .tweet_post_linkitme_iconbox{
+            i{
+                font-size: 15px;
+                color: c.$h1_h2_h3_normalcolor;
+                font-weight: 700;
+            }
+         }
+          .tweet_post_linkitme_text{
+            margin-left: 15px;
+            h4{
+                font-size: 15px;
+                color: c.$h1_h2_h3_normalcolor;
+            }
+          }
+        }
+    }
+}
+
+
+

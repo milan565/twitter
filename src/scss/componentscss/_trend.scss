@@ -1,0 +1,20 @@
+
+.log_trend_wrapper{
+    border-radius: 0px;
+    .log_trend_title{
+        padding: 5px 16px;
+        h3{
+            font-size: 20px;
+            font-weight: 700;
+            color: black;
+        }
+        // border: 1px solid black;
+    }
+
+    .log_more_trend_wrapper{
+       
+        a{
+            border-radius: 0px!important;
+        }
+    }
+}
