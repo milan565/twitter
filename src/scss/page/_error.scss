@@ -1,0 +1,35 @@
+@use '../globalscss/color' as c;
+.error_left_box{
+    width: 100%;
+    height: 100%;
+  
+    .error_in_box{
+        width: 100%;
+        height: 300px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        img{
+            width: 150px;
+            height: 150px;
+        }
+        h1{
+            font-size: 40px;
+            color: c.$h6_color;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 600;
+            color: c.$h6_color;
+        }
+    }
+}
+.error_right_box{
+    width: 100%;
+    height: 100%;
+    
+}
