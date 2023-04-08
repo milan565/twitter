@@ -20,21 +20,19 @@ export default function Hhome() {
    
     
     useEffect(()=>{
-      let authFun=()=>{
+      
         onAuthStateChanged(twiAuth,(user)=>{
           dispatch(add_Login_user(user))
           setTimeout(()=>{
            setShow(true);
           },500)
         })
-      }
-      authFun();
+   // eslint-disable-next-line react-hooks/exhaustive-deps
     },[]);
     useEffect(()=>{
-      let postFun=()=>{
+  
         dispatch(PostThuck());
-      }
-      postFun();
+     // eslint-disable-next-line react-hooks/exhaustive-deps
       },[]);
   
   return (
