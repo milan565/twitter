@@ -46,7 +46,7 @@ export default function Bbookmark() {
                       <div className='bookmark_left_body'>
                         <div className='bookmark_inne_body'>
                           <div className='bookmark_image_box'>
-                            <img src='https://abs.twimg.com/responsive-web/client-web/book-in-bird-cage-800x400.v1.71804389.png' alt='bookmark image'/>
+                            <img src='https://abs.twimg.com/responsive-web/client-web/book-in-bird-cage-800x400.v1.71804389.png' alt='bookmark profile'/>
                           </div>
                           <div className='bookmark_content_box'>
                             <h1>Save Tweets for later</h1>

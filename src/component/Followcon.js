@@ -21,7 +21,7 @@ export default function Followcon(props) {
                         <div className='com_follow_left'>
                           <div className='com_follow_profile'>
                             <div className='com_follow_image'>
-                              <img src='https://www.logodesignlove.com/wp-content/uploads/2010/06/cnn-logo-white-on-red.jpg' alt='followers image'/>
+                              <img src='https://www.logodesignlove.com/wp-content/uploads/2010/06/cnn-logo-white-on-red.jpg' alt='followers profile'/>
                             </div>
                           </div>
                           <div className='com_follow_profile_info'>

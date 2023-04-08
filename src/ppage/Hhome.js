@@ -20,15 +20,21 @@ export default function Hhome() {
    
     
     useEffect(()=>{
-      onAuthStateChanged(twiAuth,(user)=>{
-        dispatch(add_Login_user(user))
-        setTimeout(()=>{
-         setShow(true);
-        },500)
-      })
+      let authFun=()=>{
+        onAuthStateChanged(twiAuth,(user)=>{
+          dispatch(add_Login_user(user))
+          setTimeout(()=>{
+           setShow(true);
+          },500)
+        })
+      }
+      authFun();
     },[]);
     useEffect(()=>{
-      dispatch(PostThuck());
+      let postFun=()=>{
+        dispatch(PostThuck());
+      }
+      postFun();
       },[]);
   
   return (

@@ -93,7 +93,7 @@ export default function Tweetpost(props) {
                           <div className='tweeet_post_option_div'>
                             <div className='tweet_post_option_innerdiv'>
                               {
-                                (logUser.email==userEmail)?(
+                                (logUser.email===userEmail)?(
                                   <div className='tweet_post_option_linkwrapper'>
                                   <Dropdown.Item to="" onClick={handleShow} className='delete_btn'><i><RiDeleteBin6Line/></i><span>Delete</span></Dropdown.Item>
                                   <Dropdown.Item to="" ><i><RiPushpin2Line/></i><span>Pin to your profile</span></Dropdown.Item>
