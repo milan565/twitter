@@ -1,4 +1,4 @@
-import { async } from "@firebase/util";
+
 import { createSlice,createAsyncThunk } from "@reduxjs/toolkit";
 import {  getDocs } from "firebase/firestore";
 import { twiColl} from '../firebase/firebaseConfigure';
@@ -16,7 +16,7 @@ let PostSlice=createSlice({
       },
      extraReducers:(builder)=>{
       builder.addCase(PostThuck.fulfilled,(state,actions)=>{
-        // console.log(actions.payload);
+        
         state.allPost=actions.payload
       })
      }
@@ -40,18 +40,3 @@ export let PostThuck=createAsyncThunk('post/fetch',async()=>{
           }
 })
 
-// export let PostThuck =()=>{
-//     return async function (dispatch,getState){
-//         let postList=[];
-//         try{
-//             let fetchPost=await getDocs(twiColl);
-//             fetchPost.forEach((doc)=>{
-//               postList.push({id:doc.id,...doc.data()})
-//             })
-//             dispatch(addPost(postList));
-//             // console.log(postList);
-//         }catch(err){
-//             console.log(err);
-//         }
-//     }
-// }

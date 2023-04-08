@@ -2,8 +2,8 @@ import React, { useState,useRef } from 'react'
 import TweetUser from './TweetUser'
 import { useSelector } from 'react-redux';
 import { Link,NavLink } from 'react-router-dom';
-import { BsChevronDown,BsCardImage ,BsListUl,BsEmojiSmile} from "react-icons/bs";
-import { RiEarthFill } from "react-icons/ri";
+import { BsCardImage ,BsListUl,BsEmojiSmile} from "react-icons/bs";
+
 import { AiOutlineFileGif,AiOutlineClose } from "react-icons/ai";
 import { BiCalendarEvent } from "react-icons/bi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
@@ -24,7 +24,7 @@ export default function TweetReply(props) {
 
   let handelComImage=(e)=>{
     let image=e.target.files[0];
-    // console.log(image);
+   
     e.preventDefault();
     if(!image){
       alert('please choose a image');
@@ -39,8 +39,7 @@ export default function TweetReply(props) {
     setPostComImage("");
     postImgRef.current.value='';
   }
-//  console.log(postCom);
-//  console.log(postComImage);
+
   return (
     <>
      <div className='tweet_reply_container'>

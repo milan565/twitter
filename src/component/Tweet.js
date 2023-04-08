@@ -1,4 +1,4 @@
-import React, { useRef, useState,useEffect } from 'react'
+import React, { useRef, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import Userprofile from './Userprofile'
 import { BsChevronDown,BsCardImage ,BsListUl,BsEmojiSmile} from "react-icons/bs";
@@ -15,8 +15,8 @@ import { ref,uploadBytes ,getDownloadURL  } from "firebase/storage";
 import { twiStore ,twiColl} from '../firebase/firebaseConfigure';
 import { useSelector ,useDispatch} from 'react-redux';
 import { addDoc } from "firebase/firestore"; 
-import {  getDocs } from "firebase/firestore";
-import { addPost, PostThuck } from '../redux/postSlice'
+
+import {  PostThuck } from '../redux/postSlice'
 
 
 export default function Tweet() {
@@ -28,7 +28,7 @@ export default function Tweet() {
   let [shareImage,setShareImage]=useState('');
   let handelPostImage=(e)=>{
     let image=e.target.files[0];
-    // console.log(image);
+   
     e.preventDefault();
     if(!image){
       alert('please choose a image');

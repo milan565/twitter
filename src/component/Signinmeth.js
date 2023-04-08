@@ -1,7 +1,7 @@
 import React from 'react'
 import { FcGoogle } from "react-icons/fc";
 import { BsApple } from "react-icons/bs";
-import { Link, Navigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { signInWithPopup } from "firebase/auth";
 import { twiAuth ,twiProvider} from '../firebase/firebaseConfigure';
 import { useNavigate } from 'react-router-dom';

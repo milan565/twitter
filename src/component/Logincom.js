@@ -7,7 +7,7 @@ import Tooltip from 'react-bootstrap/Tooltip';
 import { AiOutlineClose } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
 import { BsApple } from "react-icons/bs";
-import { BsThreeDots,BsEmojiFrown } from "react-icons/bs";
+
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import { signInWithPopup } from "firebase/auth";

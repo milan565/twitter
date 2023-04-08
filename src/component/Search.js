@@ -5,7 +5,7 @@ import { BiSearch } from "react-icons/bi";
 export default function Search() {
   let[query,setQuery]=useState('');
   let[searchState,setSearchState]=useState(false)
-  // console.log(searchState);
+ 
   return (
     <>
      <div className='com_search_container'>

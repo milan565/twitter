@@ -4,13 +4,8 @@ import Bodyheader from './Bodyheader'
 import Search from './Search'
 import Tweet from './Tweet'
 import Tweetpost from './Tweetpost'
-import { FaHashtag } from "react-icons/fa";
-import { BsThreeDots,BsEmojiFrown } from "react-icons/bs";
+import { BsThreeDots } from "react-icons/bs";
 import Followcon from './Followcon'
-import Button from 'react-bootstrap/Button';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Tooltip from 'react-bootstrap/Tooltip';
-import Optionlink from './Optionlink';
 import Trenditem from './Trenditem'
 import { useSelector } from 'react-redux'
 
@@ -18,7 +13,7 @@ export default function Body() {
   let {allPost}=useSelector((state)=>state.postManager);
   let [trendPosition,setTrendPosition]=useState(false);
   let ref=useRef(null);
-  let scr=window.scrollY;
+  
 
   let scrollFun=()=>{
     if(window.scrollY-ref?.current?.clientHeight>=720){

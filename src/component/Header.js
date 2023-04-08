@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link,useNavigate } from 'react-router-dom'
-import Image from 'react-bootstrap/Image'
+
 import Logo from './Logo'
 import Menu from './Menu'
 import { BsThreeDots } from "react-icons/bs";

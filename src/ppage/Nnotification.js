@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Button from 'react-bootstrap/Button';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
-import { RiSettings4Line,RiSettings5Fill } from "react-icons/ri";
+import { RiSettings4Line } from "react-icons/ri";
 import Notificationitem from '../component/Notificationitem';
 import Rightcom from '../component/Rightcom';
 import MoUserporfile from '../component/MoUserporfile';

@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from 'react'
+import React,{ useState} from 'react'
 import { Link } from 'react-router-dom'
 import TweetUser from './TweetUser';
 import { BsThreeDots,BsEmojiFrown,BsPersonPlus,BsChat } from "react-icons/bs";
@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import { AiOutlineHeart,AiOutlineClose } from "react-icons/ai";
-import { BiBarChart,BiVolumeMute,BiBlock,BiRepost,BiMessageRounded } from "react-icons/bi";
+import { BiBarChart,BiVolumeMute,BiBlock,BiRepost } from "react-icons/bi";
 import { FiShare,FiBarChart2 } from "react-icons/fi";
 import { RiFileListLine,RiFlag2Line,RiDeleteBin6Line,RiPushpin2Line,RiLink } from "react-icons/ri";
 import { ImEmbed2 } from "react-icons/im";
@@ -17,9 +17,9 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import { useDispatch, useSelector } from 'react-redux';
 import Modal from 'react-bootstrap/Modal';
 import {  ref, deleteObject } from "firebase/storage";
-import { twiStore,twiDB,twiColl } from '../firebase/firebaseConfigure';
-import { doc, deleteDoc,getDocs } from "firebase/firestore";
-import { addPost, PostThuck } from '../redux/postSlice';
+import { twiStore,twiDB } from '../firebase/firebaseConfigure';
+import { doc, deleteDoc } from "firebase/firestore";
+import {  PostThuck } from '../redux/postSlice';
 import TweetReply from './TweetReply';
 
 export default function Tweetpost(props) {

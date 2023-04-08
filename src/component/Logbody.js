@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { RiSettings4Line,RiSettings5Fill } from "react-icons/ri";
+import { RiSettings4Line } from "react-icons/ri";
 import { BsThreeDots } from "react-icons/bs";
 import Search from './Search';
 import Trend from './Trend';
-import Footer from './Footer';
+
 import Signinmeth from './Signinmeth';
 export default function Logbody() {
   return (

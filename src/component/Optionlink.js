@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { BsEmojiFrown } from "react-icons/bs";
+
 export default function Optionlink(props) {
     let icon=props.icon;
     let titlt=props.title;

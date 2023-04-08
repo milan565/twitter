@@ -1,14 +1,13 @@
 import React ,{useRef, useState,useEffect }from 'react'
-import { Link } from 'react-router-dom'
+
 import Bodyheader from '../component/Bodyheader'
-import Search from '../component/Search'
+
 import Tweet from '../component/Tweet'
 import Tweetpost from '../component/Tweetpost'
-import { BsThreeDots } from "react-icons/bs";
-import Followcon from '../component/Followcon'
+
 import { PostThuck } from '../redux/postSlice'
 import { add_Login_user } from '../redux/loginUserSli'
-import Trenditem from '../component/Trenditem'
+
 import { useSelector,useDispatch } from 'react-redux'
 import { twiAuth } from '../firebase/firebaseConfigure'
 import { onAuthStateChanged } from 'firebase/auth'
@@ -23,7 +22,7 @@ export default function Hhome() {
     let[show,setShow]=useState(false);
     let dispatch=useDispatch();
     let ref=useRef(null);
-    let scr=window.scrollY;
+    
     useEffect(()=>{
       onAuthStateChanged(twiAuth,(user)=>{
         dispatch(add_Login_user(user))

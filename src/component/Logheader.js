@@ -1,8 +1,8 @@
 import React from 'react'
-import Image from 'react-bootstrap/Image'
+
 import Logo from './Logo'
 
-import { BsThreeDots } from "react-icons/bs";
+
 import Logmenu from './Logmenu';
 
 export default function Logheader() {

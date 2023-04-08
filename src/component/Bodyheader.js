@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Userprofile from './Userprofile'
+
 import MoUserporfile from './MoUserporfile'
 
 export default function Bodyheader() {
