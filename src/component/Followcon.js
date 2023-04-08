@@ -21,7 +21,7 @@ export default function Followcon(props) {
                         <div className='com_follow_left'>
                           <div className='com_follow_profile'>
                             <div className='com_follow_image'>
-                              <img src='https://www.logodesignlove.com/wp-content/uploads/2010/06/cnn-logo-white-on-red.jpg'/>
+                              <img src='https://www.logodesignlove.com/wp-content/uploads/2010/06/cnn-logo-white-on-red.jpg' alt='followers image'/>
                             </div>
                           </div>
                           <div className='com_follow_profile_info'>
@@ -45,7 +45,7 @@ export default function Followcon(props) {
                         <div className='com_follow_left'>
                           <div className='com_follow_profile'>
                             <div className='com_follow_image'>
-                              <img src='https://static01.nyt.com/vi-assets/images/share/1200x1200_t.png'/>
+                              <img src='https://static01.nyt.com/vi-assets/images/share/1200x1200_t.png' alt='followers profile'/>
                             </div>
                           </div>
                           <div className='com_follow_profile_info'>
@@ -69,7 +69,7 @@ export default function Followcon(props) {
                         <div className='com_follow_left'>
                           <div className='com_follow_profile'>
                             <div className='com_follow_image'>
-                              <img src='https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/BBC_News.svg/1023px-BBC_News.svg.png'/>
+                              <img src='https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/BBC_News.svg/1023px-BBC_News.svg.png' alt='followers profile'/>
                             </div>
                           </div>
                           <div className='com_follow_profile_info'>

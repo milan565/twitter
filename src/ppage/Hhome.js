@@ -1,13 +1,9 @@
-import React ,{useRef, useState,useEffect }from 'react'
-
+import React ,{ useState,useEffect }from 'react'
 import Bodyheader from '../component/Bodyheader'
-
 import Tweet from '../component/Tweet'
 import Tweetpost from '../component/Tweetpost'
-
 import { PostThuck } from '../redux/postSlice'
 import { add_Login_user } from '../redux/loginUserSli'
-
 import { useSelector,useDispatch } from 'react-redux'
 import { twiAuth } from '../firebase/firebaseConfigure'
 import { onAuthStateChanged } from 'firebase/auth'
@@ -18,10 +14,10 @@ import Motweet from '../component/Motweet'
 
 export default function Hhome() {
     let {allPost}=useSelector((state)=>state.postManager);
-    let [trendPosition,setTrendPosition]=useState(false);
+   
     let[show,setShow]=useState(false);
     let dispatch=useDispatch();
-    let ref=useRef(null);
+   
     
     useEffect(()=>{
       onAuthStateChanged(twiAuth,(user)=>{
@@ -30,19 +26,11 @@ export default function Hhome() {
          setShow(true);
         },500)
       })
-    },[])
+    },[]);
     useEffect(()=>{
       dispatch(PostThuck());
-      },[])
-    let scrollFun=()=>{
-      if(window.scrollY-ref?.current?.clientHeight>=720){
-        setTrendPosition(false)
-      }
-      else{
-        setTrendPosition(true)
-      }
-    }
-    window.addEventListener('scroll',scrollFun);
+      },[]);
+  
   return (
     <>
     {

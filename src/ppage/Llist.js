@@ -11,7 +11,7 @@ export default function Llist() {
                 <div className='body_left_box'>
                   <div className='list_l_con'>
                   <div className='mess_l_box'>
-                        <img src='https://cdn.pixabay.com/photo/2019/02/21/01/58/under-construction-4010445_1280.jpg'/>
+                        <img src='https://cdn.pixabay.com/photo/2019/02/21/01/58/under-construction-4010445_1280.jpg' alt='contruction image'/>
                         <h1> Under Construction</h1>
                       </div>
                   </div>

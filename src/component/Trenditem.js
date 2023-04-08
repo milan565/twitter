@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import Button from 'react-bootstrap/Button';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
@@ -9,10 +9,10 @@ import { BsThreeDots,BsEmojiFrown } from "react-icons/bs";
 import Dropdown from 'react-bootstrap/Dropdown';
 
 export default function Trenditem() {
-    let[trendOption,setTrendOption]=useState(false);
-    let handelDropdownTrend=()=>{
-        setTrendOption(state=>!state)
-    }
+    // let[trendOption,setTrendOption]=useState(false);
+    // let handelDropdownTrend=()=>{
+    //     setTrendOption(state=>!state)
+    // }
   return (
     <>
       <div className='body_trend_item'>
@@ -40,7 +40,7 @@ export default function Trenditem() {
                                         </Tooltip>
                                     }
                                     >
-                                    <Button variant="secondary" className='cmt_btn post_icon' onClick={handelDropdownTrend}>
+                                    <Button variant="secondary" className='cmt_btn post_icon' >
                                         <i><BsThreeDots/></i> 
                                         <span></span>
                                     </Button>

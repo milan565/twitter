@@ -27,7 +27,7 @@ export default function MoUserporfile() {
      <div className='mo_up_con'>
         <div className='mo_up_box'>
         <Button variant="primary" onClick={handleShow}>
-          <img src={(logUser?.photoURL)?(logUser.photoURL):(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeRakKZ5OBynaqHLdHKWENtBoXs73kckpuDWXN_07M5XqU1XBE3lGhBRxdxx2QxjFrm8o&usqp=CAU`)}/>
+          <img src={(logUser?.photoURL)?(logUser.photoURL):(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeRakKZ5OBynaqHLdHKWENtBoXs73kckpuDWXN_07M5XqU1XBE3lGhBRxdxx2QxjFrm8o&usqp=CAU`)} alt='user image'/>
           </Button>
           <Offcanvas show={show} onHide={handleClose}  >
           <Offcanvas.Header >
@@ -45,7 +45,7 @@ export default function MoUserporfile() {
             <div className='off_bo_user'>
               <div className='off_bo_u_he'>
                 <div className='off_bo_u_pro'>
-                  <img src={(logUser?.photoURL)?(logUser.photoURL):(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeRakKZ5OBynaqHLdHKWENtBoXs73kckpuDWXN_07M5XqU1XBE3lGhBRxdxx2QxjFrm8o&usqp=CAU`)}/>
+                  <img src={(logUser?.photoURL)?(logUser.photoURL):(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeRakKZ5OBynaqHLdHKWENtBoXs73kckpuDWXN_07M5XqU1XBE3lGhBRxdxx2QxjFrm8o&usqp=CAU`)} alt='user image'/>
                 </div>
                 <div className='off_bo_u_btn'>
                   <button><BsPlusLg/></button>

@@ -16,7 +16,7 @@ export default function Userprofilecom() {
                 <div className='u_p_tb_first'>
                     <div className='u_p_first_imgb'>
                         <div className='u_p_f_ib_inebox'>
-                            <img src={(logUser?.photoURL)?(logUser?.photoURL):(`https://cdn.pixabay.com/photo/2016/11/14/17/39/person-1824147_960_720.png`)} imf-fluid/>
+                            <img src={(logUser?.photoURL)?(logUser?.photoURL):(`https://cdn.pixabay.com/photo/2016/11/14/17/39/person-1824147_960_720.png`)} imf-fluid alt='user profile'/>
                         </div>
                     </div>
                     <div className='u_p_first_buttonb'>

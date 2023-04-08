@@ -101,7 +101,7 @@ export default function Tweet() {
                 <div className='tweet_image_review_box'>
                   <div className='tweet_image_review_imagebox'>
                     <div className='tweet_image_review_imagewr'>
-                      <img src={(shareImage)?(URL.createObjectURL(shareImage)):null} img-fluid/>
+                      <img src={(shareImage)?(URL.createObjectURL(shareImage)):null} img-fluid alt='tweet post'/>
                       <div className='tweet_image_review_close'>
                       <OverlayTrigger
                         placement='bottom'

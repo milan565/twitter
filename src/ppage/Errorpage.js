@@ -10,7 +10,7 @@ export default function Errorpage() {
             <div className='left_main_container'>
               <div className='error_left_box'>
                 <div className='error_in_box'>
-                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLSitzsIWi-EZxOmYVxwJr6wPOL1vui1SLw&usqp=CAU'/>
+                    <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLSitzsIWi-EZxOmYVxwJr6wPOL1vui1SLw&usqp=CAU' alt='error image'/>
                     <h1>404</h1>
                     <p>Page not found</p>
                 </div>

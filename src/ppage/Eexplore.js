@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Search from '../component/Search'
 import { Link } from 'react-router-dom'
 import { RiSettings4Line } from "react-icons/ri";
@@ -7,14 +7,14 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import Trend from '../component/Trend';
 import { BsThreeDots } from "react-icons/bs";
-import Signinmeth from '../component/Signinmeth';
+
 import Followcon from '../component/Followcon';
 import MoUserporfile from '../component/MoUserporfile';
 import Motweet from '../component/Motweet';
 
 
 export default function Eexplore() {
-  let[explo,setExplo]=useState(true);
+
   return (
     <>
         <div className='bbody_container'>
@@ -66,20 +66,13 @@ export default function Eexplore() {
                 <div className='body_right_innercontainer'>
                    <div className='explore_container_right'>
                       <div className='explore_right_box'>
-                        {(explo)?(<div className='explore_follow_box'>
+                        <div className='explore_follow_box'>
                           <div className='body_right_treand_container '>
                           <div className='body_right_trendbox'>
                           <Followcon/>
                           </div>
                           </div>
-                        </div>):(
-                          <div className='explore_login_box'>
-                             <div className='log_signin_meth_api'>
-                              <Signinmeth />
-                              </div>
-                          </div>
-                        )}
-                        
+                        </div>
                         
                         <div className='explore_more_info'>
                           <div className='log_signin_info_box'>

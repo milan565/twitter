@@ -64,7 +64,7 @@ export default function Logincom() {
             </div>
             <div className='login_mo_logo'>
               <div className='login_mo_logo_box'>
-                <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png'/>
+                <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png' alt='tweeter logo'/>
               </div>
             </div>
            </div>

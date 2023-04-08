@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import { Link, NavLink, useLocation  } from 'react-router-dom'
-import { BsBookmark,BsBookmarkFill,BsHash,BsFillPersonFill,BsPerson } from "react-icons/bs";
+import { BsBookmark,BsBookmarkFill,BsFillPersonFill,BsPerson } from "react-icons/bs";
 import { BiHomeCircle,BiMessageRoundedDots,BiBarChart } from "react-icons/bi";
 import { RiHome7Fill,RiNotification4Fill ,RiFileList2Fill,RiFileListLine} from "react-icons/ri";
 import { FaHashtag } from "react-icons/fa";
@@ -21,7 +21,7 @@ import Tweetmodal from '../ccomponent/Tweetmodal';
 export default function Menu() {
     let location=useLocation();
     
-  let [activeState,setActiveState]=useState(false)
+  
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -122,10 +122,10 @@ export default function Menu() {
             <NavLink   className='option_btn_extra'>
                 <div className='navlink_wrapper'>
                     <div className='menuitem_iconbox'>
-                        <span>{(activeState)?(<RiHome7Fill/>):(<HiOutlineDotsCircleHorizontal/>)} </span>
+                        <span><HiOutlineDotsCircleHorizontal/> </span>
                     </div>
                     <div className='menuitem_contentbox'>
-                        <h2 className={`${(activeState)?("navitem_active"):null}`}>More</h2>
+                        <h2 >More</h2>
                     </div>
                  </div>
                  
@@ -156,7 +156,7 @@ export default function Menu() {
                         </div>
                     </div>
                     <div className='menu_more_b_b'>
-                     <Accordion defaultActiveKey="0">
+                     <Accordion>
                         <Accordion.Item eventKey="0">
                             <Accordion.Header>Creator Studio</Accordion.Header>
                             <Accordion.Body>

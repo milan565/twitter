@@ -100,7 +100,7 @@ export default function Tweetmodal(props) {
                     <div className='tweet_image_review_box'>
                     <div className='tweet_image_review_imagebox'>
                         <div className='tweet_image_review_imagewr'>
-                        <img src={(moshareImage)?(URL.createObjectURL(moshareImage)):null} img-fluid/>
+                        <img src={(moshareImage)?(URL.createObjectURL(moshareImage)):null} img-fluid alt='tweet post'/>
                         <div className='tweet_image_review_close'>
                         <OverlayTrigger
                             placement='bottom'
