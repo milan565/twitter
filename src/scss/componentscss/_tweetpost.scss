@@ -13,13 +13,16 @@
     &:hover{
         background-color:c.$post_hover_background ;
     }
+    @media screen and (max-width:499.9px){
+        padding:0px 8px;  
+      }
 }
 .com_post_box{
     // width: inherit;
     width: 100%;
     min-height: 400px;
     padding: 12px 0px;
-    // border: 1px solid black;
+   
 }
 .com_post_wrapper{
     display: flex;
@@ -130,7 +133,7 @@
         // max-height:350px ;
         margin-top: 5px;
         border-radius: 15px;
-        // border: 1px solid red;
+     
 
         img{
             border-radius: 15px;
@@ -138,6 +141,7 @@
             height: 350px;
             object-fit: cover;
             object-position: center;
+          
         }
     }  
 }
@@ -149,22 +153,22 @@
 }
 .com_post_status_moreoption{
     display: flex;
+    justify-content: space-between;
+  
 }
 .com_post_status_icon{
-    margin-right: 30px;
+    // margin-right: 30px;
     &.com_post_see{
         @media screen and (max-width:499.9px){
          display: none;   
         }
     }
     &.com_post_retw{
-        @media screen and (max-width:499.9px){
-           margin-left: 20px;  
-           }  
+        
     }
     // border: 1px solid red;
     @media screen and (max-width:768px){
-        margin-right: 10px;   
+        // margin-right: 10px;   
     }
 //    border: 1px solid black;
         button{

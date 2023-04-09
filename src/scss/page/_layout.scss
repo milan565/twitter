@@ -185,6 +185,11 @@
         max-width: 520px;
         
     }
+    @media screen and (max-width:499.9px) {
+        max-width: 480px;
+      
+        
+    }
 
    .left_main_container{
     width: 60%;
@@ -200,6 +205,8 @@
     }
     @media screen and (max-width:499.9px){
         width: 100%;
+        border-left: none;
+        border-right: none;
      }
     .body_left_box{
         // width: 100%;

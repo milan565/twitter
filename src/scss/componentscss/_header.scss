@@ -42,14 +42,15 @@ a{
    height: 100%;
    border-radius: 50%;
    transition: all 0.2s ease-in-out;
+   background-color: transparent;
    cursor: pointer;
    &:hover{
     background-color: c.$logo_background;
     transition: all 0.2s ease-in-out;
    }
     img{
-    width: 29px;
-    height: 24px;
+    width: 32px;
+    height: 30px;
     }
 }
 }

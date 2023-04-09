@@ -9,7 +9,7 @@ export default function Logo(props) {
      <div className='logo_container'>
          <div className='logo_box '>
          <Link to={props?.path}>
-           <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png' alt='logo image' fluid responsive />
+           <Image src='https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png' alt='logo image' fluid responsive />
            </Link>   
           </div>
           </div>

@@ -9,7 +9,7 @@ export default function Loading() {
       <Row>
         <div className='loading_box'>
             <div className='loading_logo_box'>
-                <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/1245px-Twitter-logo.svg.png' alt='tweeter logo'/>
+                <img src='https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png' alt='tweeter logo'/>
             </div>
         </div>
       </Row>

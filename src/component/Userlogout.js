@@ -24,7 +24,7 @@ export default function Userlogout(props) {
     <div className='u_logout_container'>
         <div className='u_logout_box'>
             <div className='u_logout_header'>
-                <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png' alt='tweeter logo'/>
+                <img src='https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png' alt='tweeter logo'/>
             </div>
             <div className='u_logout_body'>
                 <h3>Log out of Twitter?</h3>
